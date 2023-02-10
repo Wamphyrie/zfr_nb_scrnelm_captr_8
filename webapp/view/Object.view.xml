@@ -1,6 +1,10 @@
 <mvc:View
 	controllerName="phoenix.zfr_nb_scrnelm_captr_8.controller.Object"
 	xmlns="sap.m"
+	xmlns:core = "sap.ui.core"
+	xmlns:layout = "sap.ui.layout"
+	xmlns:form = "sap.ui.layout.form"
+	xmlns:unified = "sap.ui.unified"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic"
 	xmlns:footerbar="sap.ushell.ui.footerbar">
@@ -17,13 +21,26 @@
 		</semantic:titleHeading>
 
 		<semantic:headerContent>
-			<ObjectNumber
-				number="{
-					path: 'Salary',
-					formatter: '.formatter.numberUnit'
-				}"
-				numberUnit="{Country}"
-			/>
+			<form:SimpleForm  title = "My Simple Form" layout = "ResponsiveGridLayout" >
+				<Label text = "User ID"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "userId"  value = ""  width = "250px" />
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+
+				<Label  text = "" />
+				<Button  text = "Submit"  type = "Emphasized"  width = "250px"  press = "submitData" />
+			</form:SimpleForm>
 		</semantic:headerContent>
 
 		<semantic:sendEmailAction>
