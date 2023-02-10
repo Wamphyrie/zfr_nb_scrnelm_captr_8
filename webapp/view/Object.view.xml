@@ -23,15 +23,42 @@
 		<semantic:headerContent>
 			<form:SimpleForm  title = "My Simple Form" layout = "ResponsiveGridLayout" >
 				<Label text = "User ID"  textDirection = "RTL"  design = "Bold" />
-				<Input  id = "userId"  value = ""  width = "250px" />
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+				<Input  id = "id_userId"  value = ""  width = "250px" />
+				
+				<Label text = "Password"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_pWrd"  value = "" type = "Password"  width = "250px"  />
+			
+				<Label text = "First Name"  textDirection = "RTL"  design = "Bold" />
+				<Input id = "id_fName"	value = ""  width = "250px"  />
+				
+				<Label text = "Last Name"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_lName"		value = ""  width = "250px"  />
+
+				<Label text = "Email"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_email"  value = ""  width = "250px"  />
+				
+				<Label text = "Country"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_cntr"  value = ""  width = "250px"  />
+				
+				<Label text = "Salary"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_sal"	value = "" width = "250px"  />
+				
+				<Label text = "Mobile"  textDirection = "RTL"  design = "Bold" />
+				<Input  id = "id_mbl"	value = "" width = "250px"  />
+				
+				<Label text = "Permanent/Temporary"  textDirection = "RTL"  design = "Bold" />
+				<CheckBox  id = "id_cBox"	selected = "false"   />				
+				
+				<Label text = "Date"  textDirection = "RTL"  design = "Bold" />
+				<DatePicker		id = "id_dt"	width = "250px"  />
+				
+				<Label text = "Time"  textDirection = "RTL"  design = "Bold" />
+				<Timepicker  id = "id_tim"  width = "250px"  />
+
+
+
+
+
 <!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
 <!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
 <!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->

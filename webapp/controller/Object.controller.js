@@ -153,11 +153,23 @@ sap.ui.define([
 			
 			submitData : function()
 			{
-				var userId	= this.getView().byId("userId").getValue();
-				
+				var lv_userId	= this.getView().byId("id_userId").getValue();
+				var lv_pWrd 	= this.getView().byId("id_pWrd").getValue();
+				var lv_fName	= this.getView().byId("id_fName").getValue();
+				var lv_lName	= this.getView().byId("id_lName").getValue();
+				var lv_email	= this.getView().byId("id_email").getValue();
+				var lv_cntr		= this.getView().byId("id_cntr").getValue();
+				var lv_sal		= this.getView().byId("id_sal").getValue();
+				var lv_mbl		= this.getView().byId("id_mbl").getValue();
+				var  lv_cBox	= this.getView().byId("id_cBox").getSelected();
+				var lv_dt		= this.getView().byId("id_dt").getValue();
+				var lv_tim  	= this.getView().byId("id_tim").getValue();
 				// Display captured values
 				
-				sap.m.MessageBox.success( userId );
+				sap.m.MessageBox.success( lv_userId + " " + lv_pWrd + " " + lv_fName + " " + lv_lName +
+										  " " + lv_email + " " + lv_cntr + " " + lv_sal + " " + lv_mbl +
+										  " " + lv_cBox + " " + lv_dt + " " + lv_tim );
+
 			}
 
 		});
