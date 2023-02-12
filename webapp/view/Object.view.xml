@@ -55,13 +55,65 @@
 				<Label text = "Time"  textDirection = "RTL"  design = "Bold" />
 				<Timepicker  id = "id_tim"  width = "250px"  />
 
+				<Label text = "Progress Indicator"  textDirection = "RTL"  design = "Bold" />
+				<ProgressIndicator  id = "id_progInd"  percentValue = "80" width = "250px" showValue = "true"  state = "Success"  />
 
+				<Label text = "Rating Indicator"  textDirection = "RTL"  design = "Bold" />
+				<RatingIndicator  id = "id_rtng"  value = "4"  maxValue = "5"  />
 
+				<Label text = "Slider"  textDirection = "RTL"  design = "Bold" />
+				<Slider id = "id_sldr"  value = "80" max = "100" width = "250px"  />
 
+				<Label text = "Text Area"  textDirection = "RTL"  design = "Bold" />
+				<TextArea  id = "id_tArea"  value = ""  rows = "4" cols = "15"  width = "250px"  />
+				
+				<Label text = "Drop Down"  textDirection = "RTL"  design = "Bold" />
+				<Select  id = "id_dDown"  width = "250px" >
+					<items>
+						<core:Item  key = "US"  text = "USA"  />
+						<core:Item  key = "IN"  text = "India"  />
+						<core:Item  key = "CN"  text = "Canada" />
+					</items>
+				</Select>
 
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
-<!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
+				<Label text = "ComboBox"  textDirection = "RTL"  design = "Bold" />					
+				<ComboBox  id = "id_cmBox"  width = "250px"  >
+					<items>
+						<core:Item  key = "US"  text = "USA" />
+						<core:Item  key = "IN"  text = "India"  />
+						<core:Item  key = "CN"  text = "Canada"  />
+						<core:Item  key = "CH"	text = "China"  />
+					</items>
+				</ComboBox>
+
+				<Label text = "MultiComboBox"  textDirection = "RTL"  design = "Bold" />
+				<MultiComboBox  id = "id_mCBox"  width = "250px" >
+					<items>
+						<core:Item  key = "Ap"  text = "Apple"  />
+						<core:Item  key = "Or"  text = "Orange"  />
+						<core:Item  key = 'Bn'  text = "Banana"  />
+					</items>
+				</MultiComboBox>
+
+				<Label text = "Multi Input"  textDirection = "RTL"  design = "Bold" />
+				<MultiInput  id = "id_mInpt"  width = "250px"  >
+					<suggestionItems>
+						<core:Item  key = "pn"  text = "Pen" />
+						<core:Item  key = "ppr" text = "Paper"  />
+						<core:Item  key = "brd" text = "Board"  />
+					</suggestionItems>
+				</MultiInput>
+
+				<Label text = "Tokenizer"  textDirection = "RTL"  design = "Bold" />
+				<Tokenizer>
+					<tokens>
+						<Token  text = "Bed"  />
+						<Token  text = "Blanket"  />
+						<Token  text = "Sheets"  />
+						<Token  text = "Pillow"  />
+ 					</tokens>
+				</Tokenizer>				
+				
 <!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
 <!--<Label text = "nay"  textDirection = "RTL"  design = "Bold" />-->
 

@@ -164,11 +164,34 @@ sap.ui.define([
 				var  lv_cBox	= this.getView().byId("id_cBox").getSelected();
 				var lv_dt		= this.getView().byId("id_dt").getValue();
 				var lv_tim  	= this.getView().byId("id_tim").getValue();
-				// Display captured values
+				var lv_progInd	= this.getView().byId("id_progInd").getPercentValue();
+				var lv_rtng		= this.getView().byId("id_rtng").getValue();
+				var lv_sldr		=	this.getView().byId("id_sldr").getValue();
+				var lv_tArea	= this.getView().byId("id_tArea").getValue();
+				var lv_dDown    = this.getView().byId("id_dDown").getSelectedItem().getText();
+				var  lv_cmBox	= this.getView().byId("id_cmBox").getSelectedItem().getText();
+				var  lv_mCBox	= this.getView().byId("id_mCBox").getSelectedItems();	
+				var  lv_mInpt	= this.getView().byId("id_mInpt").getTokens();
 				
+				var  la_mCBox	=	[];
+				var  la_mInpt	=	[];
+				
+				for(var i = 0; i < lv_mCBox.length; i++)
+				{
+					la_mCBox.push(lv_mCBox[i].getText());
+				}
+				
+				for(var j = 0; j < lv_mInpt.length; j++)
+				{
+					la_mInpt.push(lv_mInpt[j].getText());
+				}
+				
+				// Display captured values
 				sap.m.MessageBox.success( lv_userId + " " + lv_pWrd + " " + lv_fName + " " + lv_lName +
 										  " " + lv_email + " " + lv_cntr + " " + lv_sal + " " + lv_mbl +
-										  " " + lv_cBox + " " + lv_dt + " " + lv_tim );
+										  " " + lv_cBox + " " + lv_dt + " " + lv_tim + " " + lv_progInd +
+										  " " + lv_rtng + " " + lv_sldr + " " + lv_tArea + " " + lv_dDown +
+										  " " + lv_cmBox + " " + la_mCBox + " " + la_mInpt );
 
 			}
 
